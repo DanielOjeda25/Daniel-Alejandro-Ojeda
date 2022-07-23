@@ -18,11 +18,15 @@ body {
 /* Navbar */
 header {
   display: flex;
+  position: fixed;
+  top: 0;
+  width: 100%;
   align-items: center;
   justify-content: space-between;
   height: 80px;
   padding: 0 2rem;
   background-color: var(--black);
+  z-index: 1;
 }
 header .logo {
   font-size: 2em;
@@ -37,7 +41,7 @@ header .text-logo {
   white-space: nowrap;
   border-right: 4px solid;
   border-right-color: var(--red);
-  width: 10ch;
+  width: 13rem;
   animation: typing 2s steps(13), blink 0.7s infinite step-end alternate;
   overflow: hidden;
 }
