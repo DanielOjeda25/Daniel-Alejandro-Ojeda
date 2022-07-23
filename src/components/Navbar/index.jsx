@@ -17,9 +17,9 @@ function Navbar() {
       <h5 className='text-logo'>Hello World!</h5>
       </a>
       <nav ref={navRef}>
+      <a href='/'><FaUserNinja className='Fa-about' />About Me</a>
         <a href='/'><FaCode className='Fa-icon' />Projects</a>
-        <a href='#h'><FaUserNinja className='Fa-about' />About Me</a>
-        <a href='#h'><FaPhone className='Fa-phone' />Contact</a>
+        <a href='/'><FaPhone className='Fa-phone' />Contact</a>
         <button className='nav-btn nav-close-btn' onClick={showNavBar}>
           <FaTimes />
         </button>
