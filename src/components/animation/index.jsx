@@ -9,17 +9,16 @@ function Animation() {
 
   return (
     <>
-      <Parallax pages={2} style={{ top: '0', left: '0' }}>
+      <Parallax pages={2} style={{ top: '0', left: '0' }} className='ParallaxLayer'>
         <ParallaxLayer
           offset={0}
           speed={2.5}
           style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
           <div className='animation-container'>
-          <AnimationAbout />
+            <AnimationAbout />
             <Lottie animationData={DanyDev} className='lAnimation' />
           </div>
         </ParallaxLayer>
-
         <ParallaxLayer offset={1} speed={2} style={{ backgroundColor: '#000' }} />
 
         <ParallaxLayer
