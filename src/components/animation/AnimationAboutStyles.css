@@ -5,13 +5,14 @@
   --font-Poppins: 'Poppins', sans-serif;
   --white: #fff;
   --black: #000;
-  --red: rgb(245, 0, 24);
+  --red: #f50018;
 }
 * {
   padding: 0%;
   margin: 0%;
   box-sizing: border-box;
 }
+
 .btn,
 .btn *,
 .btn :after,
@@ -119,7 +120,6 @@
   to   { transform: translate(0, -0px); }    
 }
 .animated-box2 {
-  color: var(--red);
   position: absolute;
   left: 0;
   right: 0;
@@ -309,6 +309,11 @@
     font-weight: 800;
     margin: 2px;
     text-align: center;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
    
   }
   .animated-box2 {
@@ -320,6 +325,11 @@
     font-size: 1em;
     margin: 1.2px;
     padding: 2px;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
     
   }
 }

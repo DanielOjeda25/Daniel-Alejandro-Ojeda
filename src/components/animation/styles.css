@@ -74,3 +74,13 @@
 Parallax{
   z-index: -1;
 }
+
+.ParallaxLayer{
+  background-image: url('../../assets/shapes.svg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-origin: border-box;
+  background-clip: border-box;
+}
