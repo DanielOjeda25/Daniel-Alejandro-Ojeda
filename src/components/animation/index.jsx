@@ -1,16 +1,20 @@
-import { Parallax, ParallaxLayer } from '@react-spring/parallax'
 import React from 'react'
 import './styles.css'
-import Lottie from 'lottie-react'
 import DanyDev from '../../assets/Gifs-Animation/DanyDev.json'
+
+import Lottie from 'lottie-react'
+import { Parallax, ParallaxLayer } from '@react-spring/parallax'
+
 import AnimationAbout from './AnimationAbout'
+import AboutMe from '../AboutMe'
 
 function Animation() {
 
   return (
-    <>
+    <div >
       <Parallax pages={2} style={{ top: '0', left: '0' }} className='ParallaxLayer'>
         <ParallaxLayer
+          id='home'
           offset={0}
           speed={2.5}
           style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
@@ -19,21 +23,20 @@ function Animation() {
             <Lottie animationData={DanyDev} className='lAnimation' />
           </div>
         </ParallaxLayer>
-        <ParallaxLayer offset={1} speed={2} style={{ backgroundColor: '#000' }} />
+        <ParallaxLayer id='about' offset={1} speed={2} style={{ backgroundColor: '#f50018' }} />
 
         <ParallaxLayer
           offset={1}
-          speed={0.5}
+          speed={0.7}
           style={{
             display: 'flex',
             justifyContent: 'center',
             alignItems: 'center',
-            color: 'white',
           }}>
-          <p>Scroll up</p>
+          <AboutMe />
         </ParallaxLayer>
       </Parallax>
-    </>
+    </div>
   )
 }
 
