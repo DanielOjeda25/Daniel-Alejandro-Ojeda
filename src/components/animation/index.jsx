@@ -7,12 +7,15 @@ import { Parallax, ParallaxLayer } from '@react-spring/parallax'
 
 import AnimationAbout from './AnimationAbout'
 import AboutMe from '../AboutMe'
+import Proyects from '../Proyects'
 
 function Animation() {
 
   return (
     <div >
-      <Parallax pages={2} style={{ top: '0', left: '0' }} className='ParallaxLayer'>
+      <Parallax pages={4} style={{ top: '0', left: '0' }} className='ParallaxLayer'>
+
+        {/* Frist section */}
         <ParallaxLayer
           id='home'
           offset={0}
@@ -23,17 +26,43 @@ function Animation() {
             <Lottie animationData={DanyDev} className='lAnimation' />
           </div>
         </ParallaxLayer>
-        <ParallaxLayer id='about' offset={1} speed={2} style={{ backgroundColor: '#f50018' }} />
 
+        {/* Second Section */}
+        <ParallaxLayer id='about' offset={1} speed={2} style={{ backgroundColor: '#f50018' }} />
         <ParallaxLayer
           offset={1}
-          speed={0.7}
+          speed={0.5}
           style={{
             display: 'flex',
             justifyContent: 'center',
             alignItems: 'center',
           }}>
           <AboutMe />
+        </ParallaxLayer>
+
+        {/* Thrid section */}
+        <ParallaxLayer offset={2} speed={2} style={{ backgroundColor: '#000' }} />
+        <ParallaxLayer
+          offset={2}
+          speed={0.5}
+          style={{
+            backgroundColor: '#000'
+          }}>
+          <Proyects />
+        </ParallaxLayer>
+
+        {/* quarter section */}
+        <ParallaxLayer offset={3} speed={2} style={{ backgroundColor: '#fff' }} />
+        <ParallaxLayer
+          offset={3}
+          speed={0.5}
+          style={{
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center',
+            color: 'dark',
+          }}>
+          <p>4</p>
         </ParallaxLayer>
       </Parallax>
     </div>
