@@ -43,9 +43,9 @@ function AboutMe() {
 
   const [state, toggle] = useState(true)
   const { x } = useSpring({
-    from: { x: 0 },
+    from: { x: -500 },
     x: state ? 1 : 0,
-    config: { duration: 1000 },
+    config: { duration: 500},
   })
   const handleClick = () => {
     setIsClick(!isClick)
