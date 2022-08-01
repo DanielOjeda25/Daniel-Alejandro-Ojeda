@@ -70,6 +70,7 @@
   font-size: 1rem;
   padding: 1.25rem .625rem;
 }
+
 /*smartphones mobiles (portrait)*/
 @media (min-width: 20rem) and (max-width: 30rem) {
   .card-container {

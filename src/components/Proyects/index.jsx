@@ -5,9 +5,6 @@ import logo from '../../assets/portal-ico.svg'
 function Proyects() {
   return (
     <>
-    {/* <div className='Title'>
-      <h2>Proyects</h2>
-    </div> */}
       <div className='card-container'>
 
         <Card

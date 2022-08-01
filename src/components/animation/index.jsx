@@ -4,6 +4,8 @@ import DanyDev from '../../assets/Gifs-Animation/DanyDev.json'
 
 import Lottie from 'lottie-react'
 import { Parallax, ParallaxLayer } from '@react-spring/parallax'
+import { FaUserAlt } from "react-icons/fa"
+import {BsCodeSquare } from "react-icons/bs"
 
 import AnimationAbout from './AnimationAbout'
 import AboutMe from '../AboutMe'
@@ -28,27 +30,34 @@ function Animation() {
         </ParallaxLayer>
 
         {/* Second Section */}
-        <ParallaxLayer id='about' offset={1} speed={2} style={{ backgroundColor: '#f50018' }} />
+        <ParallaxLayer id='about' offset={1} speed={2.5} style={{ backgroundColor: '#f50018' }} />
+        
         <ParallaxLayer
+        className='About-me-layer'
           offset={1}
           speed={0.5}
           style={{
             display: 'flex',
             justifyContent: 'center',
             alignItems: 'center',
+            backgroundColor: '#f50018'
           }}>
+          <h2 className='AboutMe'><FaUserAlt className='icon-About'/>About Me</h2>
           <AboutMe />
         </ParallaxLayer>
 
         {/* Thrid section */}
         <ParallaxLayer offset={2} speed={2} style={{ backgroundColor: '#000' }} />
         <ParallaxLayer
+         className='Proyects-layer'
           offset={2}
           speed={0.5}
           style={{
             backgroundColor: '#000'
           }}>
-          <Proyects />
+          <h2 className='Proyects'><BsCodeSquare className='icon-bs'/>Proyects</h2>
+          /**/Hacer el Modal */
+          <Proyects />s
         </ParallaxLayer>
 
         {/* quarter section */}
