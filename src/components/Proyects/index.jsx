@@ -6,7 +6,6 @@ function Proyects() {
   return (
     <>
       <div className='card-container'>
-
         <Card
           img={logo}
           title='Nuevo titulo'
@@ -20,12 +19,12 @@ function Proyects() {
         <Card
           img={logo}
           title='Nuevo titulo 3'
-          text='Lorem Ipson Medium'
+          text='Lorem Ipson '
         />
-         <Card
+        <Card
           img={logo}
           title='Nuevo titulo 3'
-          text='Lorem Ipson Medium'
+          text='Lorem Ipson '
         />
       </div>
 
