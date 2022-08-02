@@ -5,11 +5,13 @@ import DanyDev from '../../assets/Gifs-Animation/DanyDev.json'
 import Lottie from 'lottie-react'
 import { Parallax, ParallaxLayer } from '@react-spring/parallax'
 import { FaUserAlt } from "react-icons/fa"
-import {BsCodeSquare } from "react-icons/bs"
+import { BsCodeSquare } from "react-icons/bs"
+import { GrContact } from "react-icons/gr"
 
 import AnimationAbout from './AnimationAbout'
 import AboutMe from '../AboutMe'
 import Proyects from '../Proyects'
+import Footer from '../Footer/Footer'
 
 function Animation() {
 
@@ -31,9 +33,9 @@ function Animation() {
 
         {/* Second Section */}
         <ParallaxLayer id='about' offset={1} speed={2.5} style={{ backgroundColor: '#f50018' }} />
-        
+
         <ParallaxLayer
-        className='About-me-layer'
+          className='About-me-layer'
           offset={1}
           speed={0.5}
           style={{
@@ -42,36 +44,35 @@ function Animation() {
             alignItems: 'center',
             backgroundColor: '#f50018'
           }}>
-          <h2 className='AboutMe'><FaUserAlt className='icon-About'/>About Me</h2>
+          <h2 className='AboutMe'><FaUserAlt className='icon-About' />About Me</h2>
           <AboutMe />
         </ParallaxLayer>
 
         {/* Thrid section */}
         <ParallaxLayer offset={2} speed={2} style={{ backgroundColor: '#000' }} />
         <ParallaxLayer
-         className='Proyects-layer'
+          className='Proyects-layer'
           offset={2}
           speed={0.5}
           style={{
             backgroundColor: '#000'
           }}>
-          <h2 className='Proyects'><BsCodeSquare className='icon-bs'/>Proyects</h2>
-          /**/Hacer el Modal */
-          <Proyects />s
+          <h2 className='Proyects'><BsCodeSquare className='icon-bs' />Proyects</h2>
+          <Proyects />
         </ParallaxLayer>
 
         {/* quarter section */}
         <ParallaxLayer offset={3} speed={2} style={{ backgroundColor: '#fff' }} />
         <ParallaxLayer
+          className='Contact-layer'
           offset={3}
           speed={0.5}
           style={{
-            display: 'flex',
-            justifyContent: 'center',
-            alignItems: 'center',
+            backgroundColor: '#fff',
             color: 'dark',
           }}>
-          <p>4</p>
+          <h2 className='Contact'><GrContact className='icon-contact' />Contact</h2>
+          <Footer />
         </ParallaxLayer>
       </Parallax>
     </div>
