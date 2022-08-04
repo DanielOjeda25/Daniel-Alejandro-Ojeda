@@ -1,11 +1,14 @@
-import React from 'react'
+import React from 'react';
 import './styles.css'
 import dany from '../../assets/Danistry.png'
+
 import { FaTwitter, FaLinkedinIn, FaGithub } from "react-icons/fa";
 import { SiGmail } from "react-icons/si"
-
+import { CopyToClipboard } from 'react-copy-to-clipboard';
+import toast, { Toaster } from 'react-hot-toast';
 
 function Footer() {
+
   return (
     <div className='Footer'>
       <div className='twiter'><FaTwitter />
@@ -16,14 +19,31 @@ function Footer() {
       <div className='Github'><FaGithub />
         <a href='https://github.com/DanielOjeda25' target='_blank' >Github</a>
       </div>
+
       <div className='Gmail'><SiGmail />
-        <a href='mailto:ojedadanielalejandro333@gmail.com' target='_blank' className='a'>Gmail</a></div>
+        <CopyToClipboard text='ojedadanielalejandro333@gmail.com'>
+          <a className='a' onClick={() => toast('Email Copied', {
+            duration: 3000,
+            position: 'bottom-right',
+            style: { fontFamily: 'Poppins, sans-serif' },
+            icon: '👏',
+            iconTheme: {
+              primary: '#000',
+              secondary: '#fff',
+            },
+            ariaProps: {
+              role: 'status',
+              'aria-live': 'polite',
+            },
+          })}>Gmail</a>
+        </CopyToClipboard>
+      </div>
       <div className='datas'>
         <img src={dany} className='danyDev' />
         <h3>&copy;Daniel Alejandro Ojeda | Frontend Developer 2022</h3>
       </div>
-
-    </div>
+      <Toaster />
+    </div >
   )
 }
 

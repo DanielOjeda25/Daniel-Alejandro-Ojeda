@@ -1,15 +1,15 @@
 import React from 'react'
 import './styles.css'
 import Card from './Card'
-import logo from '../../assets/portal-ico.svg'
+import logo from '../../assets/MarketBudget.png'
 function Proyects() {
   return (
     <>
       <div className='card-container'>
         <Card
           img={logo}
-          title='Nuevo titulo'
-          text='Lorem'
+          title='Market Budget'
+          text='Online e-commerce of small products for home and family'
         />
         <Card
           img={logo}
