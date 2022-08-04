@@ -1,10 +1,11 @@
 import React from 'react'
 import './styles.css'
 import DanyDev from '../../assets/Gifs-Animation/DanyDev.json'
+import cv from '../../assets/Daniel Alejandro Ojeda .pdf'
 
 import Lottie from 'lottie-react'
 import { Parallax, ParallaxLayer } from '@react-spring/parallax'
-import { FaUserAlt } from "react-icons/fa"
+import { FaUserAlt,FaDownload } from "react-icons/fa"
 import { BsCodeSquare } from "react-icons/bs"
 import { GrContact } from "react-icons/gr"
 
@@ -28,6 +29,9 @@ function Animation() {
           <div className='animation-container'>
             <AnimationAbout />
             <Lottie animationData={DanyDev} className='lAnimation' />
+          </div>
+          <div className='Downloadcv'>
+            <a href={cv} download='Daniel Alejandro Ojeda.pdf' target='_black'><h3 className='down'><FaDownload className='icon-down'/>Download CV</h3></a>
           </div>
         </ParallaxLayer>
 
