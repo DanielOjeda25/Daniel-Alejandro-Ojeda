@@ -4,10 +4,9 @@
 <p>It is not finished yet, it is necessary to add the projects that will come, but presently</p>
 
 <h2>Project Screenshots Responsive:</h2>
-![1](https://user-images.githubusercontent.com/88939356/183268144-459da47e-5be0-4cb3-a06c-9eec155d6f59.png)
 
+![1](https://user-images.githubusercontent.com/88939356/183268369-f4e20dea-5b05-41f8-b77e-fb17c1d56f28.png)
 ![2](https://user-images.githubusercontent.com/88939356/183268146-e17329fa-cfbf-4896-893b-4f4a88adcb90.png)
-
 ![3](https://user-images.githubusercontent.com/88939356/183268148-747b70c3-4623-4211-90c6-c789fb8ac575.png)
 ![4](https://user-images.githubusercontent.com/88939356/183268149-3c10fd9b-99c9-4328-ad61-b480b140e712.png)
 
@@ -21,4 +20,4 @@ Technologies used in the project:
 *   ViteJS (Packer)
 *   React JS
 
-<p>Link: <a></a> </p>
+<p>Link: https://t.ly/DanielAlejandroOjeda</p>
