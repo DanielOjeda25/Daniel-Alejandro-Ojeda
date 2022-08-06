@@ -64,11 +64,7 @@ function AboutMe() {
             style={{ ...style, background: item.css }}>
             {' '}
             <p className='section-about '>
-              Hello I am Daniel Alejandro Ojeda, student oriented to Frontend
-              Development, I have a great passion for development, both personal
-              and in the world of programming. <br /> I would like to be able to
-              gain experience, with this I hope to offer support to the position
-              with my knowledge and my facility in communication.
+            Hello I am Daniel Alejandro Ojeda, student oriented to Full Stack Web programming, I aim to develop professionally, I can provide my knowledge in the Frontend area, adding to my ease of communication, teamwork skills and through 2 years I have acquired the necessary knowledge for communicational and technical development.
             </p>
             <img src={logo} alt='me' className='me' />
           </animated.div>
