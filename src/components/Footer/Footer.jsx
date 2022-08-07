@@ -23,8 +23,8 @@ function Footer() {
       <div className='Gmail'><SiGmail />
         <CopyToClipboard text='ojedadanielalejandro333@gmail.com'>
           <a className='a' onClick={() => toast('Email Copied', {
-            duration: 3000,
-            position: 'bottom-right',
+            duration: 2000,
+            position: 'top-right',
             style: { fontFamily: 'Poppins, sans-serif' },
             icon: '👏',
             iconTheme: {
