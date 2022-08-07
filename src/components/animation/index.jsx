@@ -25,7 +25,7 @@ function Animation() {
           id='home'
           offset={0}
           speed={2.5}
-          style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+          style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', backgroundColor: '#f0f0f0' }}>
           <div className='animation-container'>
             <AnimationAbout />
             <Lottie animationData={DanyDev} className='lAnimation' />
