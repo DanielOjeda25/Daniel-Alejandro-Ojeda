@@ -36,7 +36,7 @@ function Animation() {
         </ParallaxLayer>
 
         {/* Second Section */}
-        <ParallaxLayer id='about' offset={1} speed={2.5} style={{ backgroundColor: '#f50018' }} />
+        <ParallaxLayer id='about' offset={1} speed={2.5} style={{ }} />
 
         <ParallaxLayer
           className='About-me-layer'
