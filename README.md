@@ -20,4 +20,4 @@ Technologies used in the project:
 *   ViteJS (Packer)
 *   React JS
 
-<p>Link: https://t.ly/DanielAlejandroOjeda</p>
+<p>Link: https://danielojeda25.github.io/Daniel-Alejandro-Ojeda/</p>
