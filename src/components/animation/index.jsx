@@ -1,7 +1,7 @@
 import React from 'react'
 import './styles.css'
 import DanyDev from '../../assets/Gifs-Animation/DanyDev.json'
-import cv from '../../assets/Daniel Alejandro Ojeda.pdf'
+import cv from '../../assets/Daniel-Alejandro-Ojeda-CV.pdf'
 
 import Lottie from 'lottie-react'
 import { Parallax, ParallaxLayer } from '@react-spring/parallax'
