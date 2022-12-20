@@ -31,7 +31,7 @@ function Animation() {
             <Lottie animationData={DanyDev} className='lAnimation' />
           </div>
           <div className='Downloadcv'>
-            <a href={cv} download='Daniel Alejandro Ojeda.pdf' target='_black'><h3 className='down'><FaDownload className='icon-down'/>Download CV</h3></a>
+            <a href={cv} download='Daniel-Alejandro-Ojeda-CV.pdf' target='_black'><h3 className='down'><FaDownload className='icon-down'/>Descargar CV CV</h3></a>
           </div>
         </ParallaxLayer>
 
